@@ -32,7 +32,7 @@ fun charToNumber(input: String) : String {
     //check if all numbers are valid and transform the string
     if(numbers.all { numbersMap.containsKey(it) } ) {
         val list = numbers.map{ numbersMap[it]!! }
-        return list.joinToString(" + ", "", " = ") + list.sum().toString()
+        return list.joinToString("+", "", "=") + list.sum().toString()
     }
 
     //if string is not valid return empty
